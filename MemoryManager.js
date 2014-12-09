@@ -5,7 +5,7 @@
 * knows the scope name.
 */
 MemoryManager = function() {
-	this.memory: {};
+	this.memory = {};
 }
 
 /**
