@@ -18,7 +18,7 @@ MemoryManager = function() {
  * @return The name of the scope (needed if one wasn't provided).
  */
 MemoryManager.prototype.newBlock = function(name) {
-	name = (typeof name != "undefined") ? name : ModsListToolkit.prototype.hashCode(new Date().getTime()).toString();
+	name = (typeof name != "undefined") ? name : new Date().getTime().toString();
 	this.memory[name] = {};
 	return name;
 };
